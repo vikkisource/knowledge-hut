@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knowledge Hut</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ------- Header Start ----------- -->
+    <div class="kh-Container sticky-bar">
+        <div class="kh-Maincontainer">
+            <div class="kh-header d-flex justify-between align-center">
+                <div class="kh-headerlft d-flex align-center">
+                    <div class="kh-logo">
+                        <img src="img/logo.png">
+                    </div>
+                    <div class="kh-Course">
+                        <p class="kh--courses" onclick="course()"><span>Courses</span><span><i class="fa fa-caret-down" id="arrow" aria-hidden="true"></i></span></p>
+                        <ul class="course-blog demo " id="demo">
+                            <li ><a id="dtvalue1" onclick="this.in" href="#">Mobile Application</a></li>
+                            <li ><a id="dtvalue2" onclick="data()" href="#">Content Development</a></li>
+                            <li ><a id="dtvalue3" onclick="data()" href="#">Skill Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="kh-srcform  d-flex justify-between align-center">
+                        <input type="text" id="inputvalue" name="" class="form-input" placeholder="What do you want to learn">
+                        <p class="srch-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="kh-headerright d-flex align-center">
+                    <a href="#" class="menu-link">How it works</a>
+                    <div class="kh-corporate">
+                        <p class="kh--corporate d-flex align-center" onclick="corporate()"><span>Corporate</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                        <ul class="corporate-blog demo1 " id="demo1">
+                            <li><a href="#">Mobile Application</a></li>
+                            <li><a href="#">Content Development</a></li>
+                            <li><a href="#">Skill Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="kh-resource">
+                        <p class="kh--resource d-flex align-center" onclick="resource()"><span>Resources</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                        <ul class="resource-blog demo2 " id="demo2">
+                            <li><a href="#">Mobile Application</a></li>
+                            <li><a href="#">Content Development</a></li>
+                            <li><a href="#">Skill Management</a></li>
+                        </ul>
+                    </div>
+                    <button class="kh-Signbtn"><a href="#" class="t-upr">Sign in</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------- Header End ----------- -->
+
+    <!--  -------------------- Banner start ------------------- -->
+    <div class="kh-Maincontainer">
+        <div class="kh-Banersection">
+            <div class="kh-Bannercontent d-flex justify-between align-end">
+                <h1 class="kh-Banerheading">Transform <br> the way you learn</h1>
+                <p class="kh-Bannerrecommdation d-flex align-center">
+                    <span>Get personalized recommendations</span><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class=" kh-sections">
+        <div class="kh-Bannersection1">
+
+
+
+            <div class="kh-Banimages kh-Maincontainer">
+
+                <img src="img/ban.jpg">
+            </div>
+        </div>
+        <div class="kh-Bannersection2">
+            <div class="kh-Maincontainer kh-Whyus d-flex justify-between">
+                <div class="kh--blog1">
+                    <p class="kh-whytitle1">Why us</p>
+                    <p class="kh-whyheading">Turn your dream in to career</p>
+                    <p class="kh-whypara">Lorem ipsum simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry.</p>
+                    <a href="#" class="kh-processbtn d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="kh--blog2 d-flex">
+                    <div class="kh-processboxes">
+                        <div class="kh-processimg">
+                            <img src="img/process1.jpg">
+                        </div>
+                        <div class="kh-proinfo">
+                            <p class="kh-proline">
+
+                            </p>
+                            <p class="kh-protitle"><a href="#">Adaptive<br>Teaching</a></p>
+                            <p class="kh-propara">Lorem ipsum simply dummy text of the printing and typesetting </p>
+                        </div>
+
+                    </div>
+                    <div class="kh-processboxes mrl-24">
+                        <div class="kh-processimg">
+                            <img src="img/process2.jpg">
+                        </div>
+                        <div class="kh-proinfo">
+                            <p class="kh-proline">
+
+                            </p>
+                            <p class="kh-protitle"><a href="#">Formative<br>Assessment</a></p>
+                            <p class="kh-propara">Lorem ipsum simply dummy text of the printing and typesetting </p>
+                        </div>
+
+                    </div>
+                    <div class="kh-processboxes">
+                        <div class="kh-processimg">
+                            <img src="img/process3.jpg">
+                        </div>
+                        <div class="kh-proinfo">
+                            <p class="kh-proline">
+
+                            </p>
+                            <p class="kh-protitle"><a href="#">Adaptive<br>Teaching</a></p>
+                            <p class="kh-propara">Lorem ipsum simply dummy text of the printing and typesetting </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  -------------------- Banner End ------------------- -->
+    <!--  ------------------ Build your skill -> SECTION 2 ---------------------- -->
+    <div class="kh-Maincontainer">
+        <div class="kh-skillsections">
+            <div>
+                <p class="kh-skillheadings">Build your Skills</p>
+                <p class="kh-skillpara">Choose from our 200+ courses and we assess your skills to make you industry ready</p>
+
+            </div>
+            <div class="kh-Multiplecourseblog">
+                <p class="kh-tagsheading">Course Domains</p>
+                <div>
+                    <ul class="d-flex justify-between course-tags">
+                        <li><a href="#">Agile Management</a></li>
+                        <li><a class="active" href="#">Big Data</a></li>
+                        <li><a href="#">Business Management</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Devops</a></li>
+                        <li><a href="#">IT Security</a></li>
+                        <li><a href="#">IT Service Management</a></li>
+                        <li><a href="#">Programming</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="kh-Courseboxes d-flex justify-between">
+                    <div class="kh-Coursesbox">
+                        <img src="img/courseicon1.png" id="courseicon" class="courseicon">
+                        <p class="course-intro">Introduction to</p>
+                        <p class="course-name">Data Science in Python</p>
+                        <p class="course-info"><span>Classroom</span><span>|</span><span>2 days</span></p>
+                        <p class="course-line"></p>
+                        <div class="course-rating d-flex justify-between align-center">
+                            <p class="go-rating"><span><i class="fa fa-google" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="fb-rating"><span><i class="fa fa-facebook" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="tw-rating"><span><i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>4.5/5</span></p>
+                        </div>
+                    </div>
+                    <div class="kh-Coursesbox active">
+                        <img src="img/courseicon1.png" id="courseicon" class="courseicon">
+                        <p class="course-intro">Introduction to</p>
+                        <p class="course-name">Data Science in Python</p>
+                        <p class="course-info"><span>classroom</span><span>|</span><span>2 days</span></p>
+                        <p class="course-line"></p>
+                        <div class="course-rating d-flex justify-between align-center">
+                            <p class="go-rating"><span><i class="fa fa-google" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="fb-rating"><span><i class="fa fa-facebook" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="tw-rating"><span><i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>4.5/5</span></p>
+                        </div>
+                    </div>
+                    <div class="kh-Coursesbox">
+                        <img src="img/courseicon1.png" id="courseicon" class="courseicon">
+                        <p class="course-intro">Introduction to</p>
+                        <p class="course-name">Data Science in Python</p>
+                        <p class="course-info"><span>classroom</span><span>|</span><span>2 days</span></p>
+                        <p class="course-line"></p>
+                        <div class="course-rating d-flex justify-between align-center">
+                            <p class="go-rating"><span><i class="fa fa-google" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="fb-rating"><span><i class="fa fa-facebook" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="tw-rating"><span><i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>4.5/5</span></p>
+                        </div>
+
+                    </div>
+                    <div class="kh-Coursesbox">
+                        <img src="img/courseicon1.png" id="courseicon" class="courseicon">
+                        <p class="course-intro">Introduction to</p>
+                        <p class="course-name">Data Science in Python</p>
+                        <p class="course-info"><span>classroom</span><span>|</span><span>2 days</span></p>
+                        <p class="course-line"></p>
+                        <div class="course-rating d-flex justify-between align-center">
+                            <p class="go-rating"><span><i class="fa fa-google" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="fb-rating"><span><i class="fa fa-facebook" aria-hidden="true"></i></span><span>4.5/5</span></p>
+                            <p class="tw-rating"><span><i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>4.5/5</span></p>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="kh-browsesec">
+                    <a href="#" class="kh-processbtn kh-browsebtn d-flex justify-between align-center"><span>Browse all</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- --------get personalized recommendation secition 3---------- -->
+    <div class="kh-Maincontainer">
+        <div class="kh-recomsection3 bg-black d-flex justify-between">
+            <div class="kh-recomheading">
+                <p>Get personalized recommdations</p>
+            </div>
+            <div class="kh-recomblog2">
+                <p class="kh-recompara">Still unsure what skills you should build?Ansure a few questions and let us suggest for you</p>
+                <a href="" class="kh-processbtn kh-recombtn d-flex justify-between align-center"><span>get started</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+            </div>
+            <img src="img/check.png" class="checkimg">
+        </div>
+
+    </div>
+
+    <!-- ---------------------- Bootcapmps  section 4 ---------------- -->
+    <div class="kh-Maincontainer">
+        <div class="d-flex justify-between align-end kh-section4">
+            <div class="kh-leftsec">
+                <p class="kh-secheading">Bootcamps to help<br> you take the next step</p>
+                <div class="d-flex kh-jobsblog">
+                    <div class="kh-jobposition">
+                        <img src="img/jobimg.jpg">
+                        <p>Comprehensive<br>Curiculum</p>
+
+                    </div>
+                    <div class="kh-jobposition">
+                        <img src="img/jobimg.jpg">
+                        <p>Comprehensive<br>Curiculum</p>
+
+                    </div>
+                    <div class="kh-jobposition">
+                        <img src="img/jobimg.jpg">
+                        <p>Comprehensive<br>Curiculum</p>
+
+                    </div>
+
+                </div>
+                <div class="d-flex ">
+                    <a href="#" class="kh-processbtn kh-secbtn  d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                    <a href="#" class="kh-processbtn  kh-secbtn kh-secbtn1 d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+            <div class="kh-rightsec">
+                <img src="img/secimg.jpg">
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- develop your skill section 5 ---------------- -->
+    <div class="kh-Maincontainer">
+        <div class="d-flex justify-between align-end kh-section5">
+            <div class="kh-leftsec">
+                <p class="kh-secheading">Develop your skills with<br> actionable insights</p>
+                <p class="kh-sec5para">Our assessment tool helps you to understand your strength,do a skill gap analysis and char out a couse to fulfill your objective.</p>
+                <div class="d-flex">
+                    <a href="#" class="kh-processbtn kh-secbtn  d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                    <a href="#" class="kh-processbtn  kh-secbtn kh-secbtn1 d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+            <div class="kh-rightsec">
+                <img src="img/chart5.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- develop your skill section 6 ---------------- -->
+    <div class="kh-Maincontainer">
+        <div class="d-flex justify-between  kh-section6">
+            <div class="kh-leftsec">
+                <img src="img/video6.jpg">
+            </div>
+            <div class="kh-rightsec">
+
+                <p class="kh-secheading">Get mentor<br>support</p>
+                <p class="kh-sec6title">Support for your learning, code review and Projects.</p>
+                <p class="kh-sec6para">Lorem ipsum is simply summy text of the printing and typesetting industry.lorem ipsum has been the indutry standard dummy text ever since the 1500s.</p>
+                <div class="d-flex">
+                    <a href="#" class="kh-processbtn kh-secbtn  d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                    <a href="#" class="kh-processbtn  kh-secbtn kh-secbtn1 d-flex justify-between align-center"><span>know our process</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------- develop your skill section 7 ---------------- -->
+    <div class="kh-Container ps-relative">
+        <img src="img/linkgo.jpg" class="lingo">
+        <div class="kh-Maincontainer">
+            <div class=" kh-section7">
+
+                <p class="kh-secheading">We have helped<br>organizations to scale</p>
+                <div class="kh-org">
+                    <div class="d-flex justify-between">
+                        <img src="img/spon1.jpg">
+                        <img src="img/spon2.jpg">
+                        <img src="img/spon3.jpg">
+                        <img src="img/spon5.jpg">
+                    </div>
+                    <div class="d-flex justify-between spon2-row2">
+                        <img src="img/spon4.jpg">
+                        <img src="img/spon6.jpg">
+                        <img src="img/spon7.jpg">
+                        <img src="img/spon8.jpg">
+                    </div>
+
+
+                </div>
+                <div class="kh-orglinks d-flex justify-end">
+                    <p class="kh-orgline active"></p>
+                    <p class="kh-orgline"></p>
+                    <p class="kh-orgline"></p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------- develop your skill section 8 ---------------- -->
+    <div class="kh-Maincontainer">
+        <div class=" kh-section8 d-flex justify-between">
+            <div class="counts">
+                <p>200</p>
+                <p>Courses</p>
+            </div>
+            <div class="counts">
+                <p>500</p>
+                <p>Instructors</p>
+            </div>
+            <div class="counts">
+                <p>70</p>
+                <p>Countries</p>
+            </div>
+            <div class="counts">
+                <p>120,750</p>
+                <p>Learners</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- Footer section 9 ---------------- -->
+    <div class="kh-Maincontainer">
+        <div class=" kh-section9 bg-black">
+            <div class="d-flex justify-between ko-folinksblog">
+                <div>
+                    <img src="img/foologo.png">
+                </div>
+                <div class="kh-fotitle">
+                    <p>About</p>
+                    <ul>
+                        <li><a>Who we are</a></li>
+                        <li><a>Who we are</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="kh-fotitle">
+                    <p>Services</p>
+                    <ul>
+                        <li><a>Classroom training</a></li>
+                        <li><a>Classroom training</a></li>
+                    </ul>
+
+                </div>
+                <div class="kh-fotitle">
+                    <p>Join us</p>
+                    <ul>
+                        <li><a>Become a training partner</a></li>
+                        <li><a>Become a training partner</a></li>
+                    </ul>
+
+                </div>
+                <div class="kh-fotitle">
+                    <p>Help & Support</p>
+                    <ul>
+                        <li><a>Contact</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="d-flex justify-between align-center">
+                <p class="t-white kh-cpright">Copyright 2019 Knowledgehut</p>
+                <ul class="d-flex kh-fosocial">
+                    <li><a href="#"><i class="fa fa-facebook-official t-white" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square t-white" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square t-white" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play t-white" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+    </script>
+
+</body>
+
+</html>
